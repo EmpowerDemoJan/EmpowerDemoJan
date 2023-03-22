@@ -77,7 +77,8 @@ public class Script
 		{
 			engine.GenerateInformation(" Element name = " +element.Name);
 		}
-		var order = OrderFactory.CreateOrder("Order 1 - ELA");
+		var order = OrderFactory.CreateOrder("Order 1");
+		order.Dispatch("ELA");
 
 	}
 }
